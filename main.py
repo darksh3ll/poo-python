@@ -1,3 +1,3 @@
-class User:
-    def __init__(self) -> None:
+class Rectangle:
+    def __init__(self):
         pass
