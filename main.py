@@ -1,8 +1,13 @@
-class Cercle:
-    pass    
+class Rectange:
+    widht = 3
+    height = 2
+
+    def calculte_area(self):
+      return self.widht + self.height
 
 
-c = Cercle()
-c.rayon = 2
-c.diametre = 12
-print(c.rayon)
+
+z = Rectange()
+print(z.calculte_area())
+
+
