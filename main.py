@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Rectange:
     widht = 3
     height = 2
@@ -11,3 +12,7 @@ z = Rectange()
 print(z.calculte_area())
 
 
+=======
+for i in range(10):
+    print("* "*i)
+>>>>>>> main
