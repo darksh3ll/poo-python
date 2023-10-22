@@ -1,2 +1,9 @@
-for i in range(10):
-    print("* "*i)
+class Parkings:
+    def __init__(self) -> None:
+        pass
+
+
+
+class Cars:
+    def __init__(self) -> None:
+        pass
