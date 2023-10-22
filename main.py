@@ -1,11 +1,9 @@
-class Toolbox:
+class Parkings:
     def __init__(self) -> None:
-        self.tools = []
-    
-    def add_tool(self,tool):
-        
-        self.tools.append(tool)
+        pass
 
 
 
-
+class Cars:
+    def __init__(self) -> None:
+        pass
