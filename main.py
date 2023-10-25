@@ -2,8 +2,8 @@ import uuid
 from datetime import datetime
 
 class parking:
-    def __init__(self):
-        pass
+    def __init__(self,place):
+        self.place = place
 
 
 
