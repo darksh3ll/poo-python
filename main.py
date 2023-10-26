@@ -2,7 +2,7 @@ import uuid
 from datetime import datetime
 
 class parking:
-    place = 2
+    place = 6
 
     def __str__(self) -> str:
         return f"Le parking contient {self.place} places"
@@ -32,11 +32,7 @@ class Car:
     
 
 p = parking()
-car1 =Car()
-car2 =Car()
-car3 =Car()
 
-car1.enter_parking()
-car2.enter_parking()
-car3.enter_parking()
-print(p.place)
+for i in range(16):
+    car = Car()
+    print(car)
