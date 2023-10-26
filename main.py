@@ -2,8 +2,18 @@ import uuid
 from datetime import datetime
 
 class parking:
-    def __init__(self,place):
-        self.place = place
+    place = 2
+
+    def __str__(self) -> str:
+        return f"Le parking contient {self.place} places"
+
+    @classmethod
+    def park_car(cls):
+        """reduit le nombre de place"""
+        if cls.place > 0:
+            cls.place -= 1
+        else:
+            print("Le parking est plein")
 
 
 
@@ -15,9 +25,18 @@ class Car:
 
     def __str__(self):
         return f"Car ID: {self.ticket_number} Entry Hours :{self.entry_hours}"
+    
+    def enter_parking(self):
+        parking.park_car()
 
+    
 
-a = Car()
-b= Car()
-print(a)
-print(b)
+p = parking()
+car1 =Car()
+car2 =Car()
+car3 =Car()
+
+car1.enter_parking()
+car2.enter_parking()
+car3.enter_parking()
+print(p.place)
