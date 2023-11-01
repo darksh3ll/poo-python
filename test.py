@@ -1,22 +1,22 @@
 import random
 
-class Joueur:
-    def __init__(self,nom,score=0):
-        self.nom = nom
-        self.score = score
+class Vehicule:
+    def __init__(self,marque,genre,color):
+        self.marque =marque
+        self.genre = genre
+        self.color = color
+
+class Car(Vehicule):
+    def __init__(self, marque, genre,color,chevaux):
+        super().__init__(marque, genre,color)
+        self.chevaux=chevaux
 
 
-class Game:
-    def __init__(self,joueur1,joueur2):
-        pass
+class Moto(Vehicule):
+    def __init__(self, marque, genre, color):
+        super().__init__(marque, genre, color)
 
 
-    @staticmethod
-    def lance_de():
-         return random.randint(1, 6)
-        
-
-
-joueur1 = Joueur("stephane")
-joueur2 = Joueur("Joel")
-
+a = Car("porshe","voiture","rouge",110)
+b = Moto("ducati",'moto',"bleu",150)
+print(b.color)
