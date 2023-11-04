@@ -21,7 +21,7 @@ client1 = Client("Doe", "John", bank1)
 
 # client2
 bank2 = Bank("cic")
-client2 = Client("stephane", "job", bank2)
+client2 = Client("stephane", "bob", bank2)
 
 client2.depose_argent(100)
 print(client2.banque.solde)
