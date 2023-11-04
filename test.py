@@ -1,22 +1,27 @@
-import random
-
-class Joueur:
-    def __init__(self,nom,score=0):
+import uuid
+class Bank:
+    def __init__(self,nom,solde=0):
         self.nom = nom
-        self.score = score
+        self.solde = solde
 
 
-class Game:
-    def __init__(self,joueur1,joueur2):
+class Client:
+    def __init__(self,nom,prenom,banque):
+        self.id = str(uuid.uuid4())[:8]
+        self.nom = nom
+        self.prenom = prenom
+        self.banque = banque
+
+    def depose_argent(self,depot):
         pass
 
+# client1
+bank1 = Bank("caisse d'epargne")
+client1 = Client("Doe", "John", bank1)
 
-    @staticmethod
-    def lance_de():
-         return random.randint(1, 6)
-        
+# client2
+bank2 = Bank("cic")
+client2 = Client("stephane", "job", bank2)
 
-
-joueur1 = Joueur("stephane")
-joueur2 = Joueur("Joel")
-
+client2.depose_argent(100)
+print(client2.banque.solde)
