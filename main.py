@@ -18,12 +18,12 @@ class parking:
         else:
             print("Le parking est plein")
 
-    @classmethod
     def nbr_car(cls):
-        print(len(cls.car_in_parking))
-        for car in cls.car_in_parking:
-            print(car)
-    
+
+
+
+
+
 
     @classmethod
     def remove_car_by_uuid(cls, car_uuid):
