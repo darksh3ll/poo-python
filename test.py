@@ -23,5 +23,4 @@ class Oiseau(Animal):
             print("Je suis un oiseau et je ne peux pas voler.")
 
 
-oiseau2.se_presenter()
 
