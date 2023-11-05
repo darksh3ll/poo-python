@@ -1,6 +1,6 @@
 
 class Animal:
-    """_summary_
+    """class animal
     """
 
     def __init__(self,nom):
