@@ -1,6 +1,12 @@
-tools = ["tournevis","marteau"]
-index =  tools.index("marteau")
-del tools[index]
+class Bird:
+    def fly(self):
+        print("je vole")
 
-for tool in tools:
-    print(tool)
+
+class Parrot:
+    def __init__(self) :
+        self.wing = Bird()
+
+
+a = Parrot()
+a.wing.fly()
