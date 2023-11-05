@@ -1,27 +1,32 @@
-import uuid
-class Bank:
-    def __init__(self,nom,solde=0):
+
+class Animal:
+
+    def __init__(self,nom):
         self.nom = nom
-        self.solde = solde
+
+    def se_presenter(self):
+        print(f"Je suis un animal et je m'appelle {self.nom}.")
 
 
-class Client:
-    def __init__(self,nom,prenom,banque):
-        self.id = str(uuid.uuid4())[:8]
-        self.nom = nom
-        self.prenom = prenom
-        self.banque = banque
+class Oiseau(Animal):
+    def __init__(self, nom,peut_voler):
+        super().__init__(nom)
+        self.peut_voler = peut_voler
+    
+    def se_presenter(self):
+        super().se_presenter()
+        if self.peut_voler:
+            print("Je suis un oiseau et je peux voler !")
+        else:
+            print("Je suis un oiseau et je ne peux pas voler.")
 
-    def depose_argent(self,depot):
-        pass
 
-# client1
-bank1 = Bank("caisse d'epargne")
-client1 = Client("Doe", "John", bank1)
+# Création d'instances d'Oiseau
+oiseau1 = Oiseau("Pépé", True)
+oiseau2 = Oiseau("Kiwi", False)
 
-# client2
-bank2 = Bank("cic")
-client2 = Client("stephane", "bob", bank2)
+# Appel de se_presenter pour chaque oiseau
+oiseau1.se_presenter()
+oiseau2.se_presenter()
+organismes.stephane@proton.me
 
-client2.depose_argent(100)
-print(client2.banque.solde)
