@@ -23,11 +23,5 @@ class Oiseau(Animal):
             print("Je suis un oiseau et je ne peux pas voler.")
 
 
-# Création d'instances d'Oiseau
-oiseau1 = Oiseau("Pépé", True)
-oiseau2 = Oiseau("Kiwi", False)
-
-# Appel de se_presenter pour chaque oiseau
-oiseau1.se_presenter()
 oiseau2.se_presenter()
 
