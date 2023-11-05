@@ -30,5 +30,4 @@ oiseau2 = Oiseau("Kiwi", False)
 # Appel de se_presenter pour chaque oiseau
 oiseau1.se_presenter()
 oiseau2.se_presenter()
-organismes.stephane@proton.me
 
