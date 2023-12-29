@@ -1,5 +1,6 @@
 import tkinter as tk
 
+
 class Cercle:
     def __init__(self, canevas, x, y, r, color):
         self.canevas = canevas
@@ -33,8 +34,7 @@ class Cercle:
         Cercle.pos(self)
 
     def pos(self):
-        print({"color":self.color,"x":self.x,'y':self.y})
-       
+        print({"color": self.color, "x": self.x, 'y': self.y})
 
 
 root = tk.Tk()

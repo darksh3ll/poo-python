@@ -1,7 +1,6 @@
 import uuid
 from datetime import datetime
 
-
 class parking:
     place = 6
     car_in_parking = []
